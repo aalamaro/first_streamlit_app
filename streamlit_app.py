@@ -26,7 +26,8 @@ else:
 streamlit.dataframe(fruits_to_show)
 
 streamlit.header("Fruityvice Fruit Advice!")
-fruit = "watermelon"
+#fruit = "watermelon"
+fruit = "kiwi"
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit)
 #streamlit.text(fruityvice_response.json())
 
