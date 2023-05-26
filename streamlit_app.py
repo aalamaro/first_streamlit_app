@@ -47,7 +47,7 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
-fruit_to_add = streamlit.text_input("What fruit would you like to add?", None)
-if fruit_to_add is not None:
+fruit_to_add = streamlit.text_input("What fruit would you like to add?", '')
+if fruit_to_add != '':
   streamlit.write('Thanks for adding ', fruit_to_add)
 
